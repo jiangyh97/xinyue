@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <form id="myform">
+        <img src="./images/login.jpg" alt="">
+        <input name="username" type=" text" placeholder="请输入用户名">
+        <input name="password" type=" text" placeholder="请输入密码">
+        <div><button>登录</button><button>注册</button></div>
+    </form>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script>
+        var myform = document.querySelector('#myform')
+        var bnt = document.querySelectorAll('button')
+        bnt[1].onclick=function(e){
+            e.preventDefault()
+            location.href ='reg.html'
+            console.log(111);
+        }
+        bnt[0].onclick = function (e) {
+            var username = document.querySelector('input[name=username]').value
+            var password = document.querySelector('input[name=password]').value
+
+            //阻止默认事件
+            //preventDefault()[dom标准写法(ie678不兼容)]
+            //ie678用returnValue
+            //或者利用return false也能阻止默认行为,没有兼容问题(只限传统注册方式)
+            e.preventDefault();
+            $.ajax({
+                url: 'login',
+                type: 'get',
+                dataType:'json',
+                data: `username=${username}&password=${password}`,
+                success(res) {
+                    if(res.token){
+                        localStorage.token=res.token
+                        localStorage.userinfo=res.userinfo
+                        // localStorage.nick=res.nick//昵称存本地
+                        location.href ='bag.html' //跳转一个页面
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

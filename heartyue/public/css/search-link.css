@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-size: 14px;
+    background: #f4eee4;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7a18;
+    color: #fff;
+    font-size: 0;
+}
+
+.header div {
+    width: 80%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #fff;
+}
+
+input {
+    width: 90%;
+    outline: none;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.header div {
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    top: 52%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    display: none;
+}
+
+.header .show {
+    display: block;
+
+}
+
+.header span {
+    font-size: 16px;
+}
+
+.creat {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    align-items: center;
+    padding-left: 10px;
+    background: #fff;
+    display: flex;
+}
+
+.creat img {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.creat p {
+    border-bottom: 1px solid #f4eee4;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.toutiao-item01>div {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid #eae3d3;
+    height: 93px;
+}
+
+.toutiao-item01:nth-of-type(3)>div {
+    border: none;
+}
+
+.toutiao-item01 {
+    display: flex;
+}
+
+.toutiao-item01>div>div {
+    display: inline-block;
+}
+
+.toutiao-item01>div>div:nth-of-type(1) {
+    box-shadow: 1px 1px 2px #c8c8c8;
+    position: relative;
+    width: 54px;
+    height: 72px;
+}
+
+.toutiao-item01>div>div:nth-of-type(1) img:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+}
+
+.toutiao-item01 img {
+    width: 100%;
+    height: 72px;
+}
+
+.toutiao-item01>div>div:nth-of-type(2) {
+    width: 75%;
+    margin-left: 8px;
+    height: 72px;
+    vertical-align: top;
+}
+
+.toutiao-item01 p:nth-of-type(1) {
+    color: #262626;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.toutiao-item01 span {
+    font-size: 12px;
+    color: #777;
+}
+
+.toutiao-item01 i {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #777;
+    margin: 0 5px;
+}
+
+.toutiao-item01 p:nth-of-type(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 15px;
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}

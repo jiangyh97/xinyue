@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bag</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1977519_rfv79vrwzyf.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/bag.css">
+
+    <style>
+        .hh {
+            text-align: center;
+            padding-top: 10px;
+            width: 255px;
+            height: 80px;
+            border-radius: 5px;
+            background-color: rgb(236, 168, 202);
+            position: fixed;
+            left: calc(50% - 130px);
+            top: calc(50% - 140px);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="head-list">
+            <li class="backk">
+                <a href="#" class="iconfont iconarrowleft"></a>
+            </li>
+            <li class="app-name">心悦小说</li>
+            <li>
+                <a href="./search.html" class="iconfont iconsearch2"></a>
+                <a href="./login.html" class="iconfont iconuser_line"></a>
+            </li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li>
+                <a href="javascript:void(0);" class="nav-on">书包</a>
+            </li>
+            <li>
+                <a href="./index.html">精选</a>
+            </li>
+            <li>
+                <a href="./rank.html">排行</a>
+            </li>
+            <li>
+                <a href="./cate.html">分类</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content wapper">
+    </main>
+    <footer>
+        <div class="foot-logo">
+            <img src="./images/decoration.png" alt="">
+            <span class="iconfont iconbangdingxiaoai"></span>
+            <img src="./images/decoration.png" class="dec-right" alt="">
+        </div>
+        <div class="foot-line"></div>
+        <div class="foot-txt">
+            <p>“比鬼神更可怕的，是人心。”</p>
+            <p class="source">--小艾同学</p>
+        </div>
+        <div class="foot-line foot-line-bottom"></div>
+        <div class="hh"></div>
+    </footer>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="./javascripts/ajax.js"></script>
+    <script src="./javascripts/bag.js"></script>
+    <script src="./javascripts/back2.js"></script>
+    <script>
+        var hh = document.querySelector('.hh')
+        function showHh(text) {
+            hh.style.display = 'block'
+            hh.innerHTML = text
+            setTimeout(function () {
+                hh.style.display = 'none'
+            }, 3000)
+        }
+        $.ajax({
+            url: 'bar',
+            data: `token=${localStorage.token}&username=${localStorage.userinfo}`,
+            type: 'get',
+            dataType: 'json',
+            success(res) {
+                //渲染书籍
+                if (res.code == 1 || res.code == 2) {
+                    console.log(res.msg)
+                    showHh(res.msg)
+                } else {
+                    $('.content-tip').remove()
+                    var len = res.length;
+                    readInfo(len)
+                    for (let i = 0; i < len; i++) {
+                        var data = res[i]
+                        addReadBook(data)
+                    }
+                }
+            }
+        })
+    </script>
+    <script src="./javascripts/click1.js"></script>
+
+</body>
+
+</html>

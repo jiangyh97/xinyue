@@ -1,0 +1,107 @@
+.content{
+    width: 100%;
+    background: #fdfcf6;
+    overflow: hidden;
+    margin-top: -2px;
+}
+.content-tip{
+    padding: 40px 0;
+    text-align: center;
+}
+.content-tip p{
+    font-size: 20px;
+    color: #cd422f;
+    margin-bottom: 4px;
+}
+.content-tip img{
+    height: 12px;
+}
+
+.read-info{
+    height: 42px;
+    padding: 0 14px;
+    font-size: 14px;
+    color: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eae3d3;
+}
+.read-info span{
+    color: #65b12c;
+}
+.edit-btn button{
+    width: 54px;
+    background-color: #ffffff;
+    border: 1px solid #dfdcd1;
+    border-radius: 3px;
+    outline: none;
+    margin-left: 8px;
+}
+.choose button{
+    width: 54px;
+    background-color: #ffffff;
+    border: 1px solid #dfdcd1;
+    border-radius: 3px;
+    outline: none;
+    margin-left: 8px;
+}
+.btn-hid{
+    display: none;
+}
+.edit-btn .del{
+    border-color: #f5682b;
+}
+.read-book{
+    width: 100%;
+    height: 92px;
+    padding: 10px 0;
+    margin: 0 10px;
+    display: flex;
+    position: relative;
+}
+.read-book-line{
+    border-bottom: 1px solid #eae3d3;
+}
+.read-book-img{
+    width: 54px;
+    height: 72px;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: #ca3b3b;
+    flex-shrink: 0;
+}
+.read-book-img img{
+    width: 100%;
+}
+.read-book-info{
+    color: #777777;
+    font-size: 12px;
+}
+.read-book-info p{
+    margin-bottom: 6px;
+}
+.read-book-tit{
+    color: #262626;
+    font-size: 18px;
+}
+.read-situation{
+    padding-right: 10px;
+}
+.choose{
+    /* width: 22px;
+    height: 22px; */
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translateY(-50%);
+    line-height: 22px;
+    /* background: #ed713b;
+    border: 1px solid #cd4d16;
+    border-radius: 3px;
+    color: #e26028;
+    text-align: center; */
+}
+/* .checkbox:checked+.choose-box{
+    color: white;
+} */

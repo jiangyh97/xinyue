@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-size: 16px;
+    background: #f4eee4;
+}
+
+.item{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.item img{
+    width: 48.5%;
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+.leibie{
+    width: 100%;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.leibie span{
+    display: inline-block;
+    width: 32%;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #c3b6a1;
+    background: #fff;
+    font-size: 16px;
+}
+.leibie span:nth-of-type(1){
+    color: #1980bb;
+}
+.leibie span:nth-of-type(2){
+    color: #d32d2d;
+}
+.leibie span:nth-of-type(3){
+    color: #498518;
+}
+
+.wapper{
+    background: #f4eee4;
+    padding: 0 6px;
+    display: flow-root;
+}
+.toutiao,.shangjia,.haoshu{
+    margin-top: 6px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dad0df;
+}
+.toutiao{
+    height: 321px;
+}
+.shangjia{
+    height: 350px;
+}
+.toutiao-header {
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    border-bottom: 1px solid #ece6dc;
+    background: #fefdf9;
+}
+.toutiao-header span{
+    font-size: 16px;
+    color: #d12727;
+}
+.toutiao a,.shangjia a{
+    display: inline-block;
+    width: 100%;
+}
+.toutiao-item01>div{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid #eae3d3;
+    height: 93px;
+}
+.toutiao-item01:nth-of-type(3)>div{
+    border:none;
+}
+#weih{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    border: 1px solid #dad0df
+}
+.shangjia-item01 .leix{
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+.toutiao-item01{
+    display: flex;
+}
+.toutiao-item01>div>div{
+    display: inline-block;
+}
+.toutiao-item01>div>div:nth-of-type(1){
+    box-shadow: 1px 1px 2px #c8c8c8;
+    position: relative;
+    width: 54px;
+    height: 72px;
+}
+.toutiao-item01>div>div:nth-of-type(1) img:nth-of-type(2){
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+}
+.toutiao-item01 img{
+    width: 100%;
+    height: 72px;
+}
+.toutiao-item01>div>div:nth-of-type(2){
+    width: 75%;
+    margin-left: 8px;
+    height: 72px;
+    vertical-align: top;
+}
+.toutiao-item01 p:nth-of-type(1){
+    color: #262626;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.toutiao-item01 span{
+    font-size: 12px;
+    color: #777;
+}
+.toutiao-item01 i{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #777;
+    margin: 0 5px;
+}
+.toutiao-item01 p:nth-of-type(2){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 15px;
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.tab{
+    width: 100%;
+}
+.tab-cnt{
+    position: relative;
+    height: 225px;
+    font-size: 0;
+}
+.tab-cnt>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.tab>div>div{
+    padding: 0 10px;
+}
+.tab-header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #ece6dc;
+    line-height: 44px;
+}
+.tab-header li{
+    flex: 1;
+    font-size: 16px;
+}
+.link{
+    color: #f5682b;
+    border-bottom: 2px solid #f5682b;
+}
+.toutiao-item01 .shangjia-cnt{
+    margin: 0 10px;
+}
+.shangjia-item01{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-bottom: 1px solid #ece6dc;
+}
+.shangjia-item01 div:nth-of-type(1){
+    width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+}
+.tab-cnt>div>a:last-child div{
+    text-align: center;
+    width: 100%;
+}
+.shangjia-item01>div{
+    padding: 10px;
+    height: 30px;
+}
+.tab-cnt .show{
+    display: block;
+}
+.footer{
+    width: 100%;
+    padding: 20px 8px;
+}
+.footer .wei{
+    border-top: 2px solid #dad0bf;
+   line-height: 40px;
+   color: #c7beae;
+   font-size: 12px;
+}
+.footer .weiwei{
+    border-bottom: 2px solid #dad0bf;
+    line-height: 40px;
+   color: #c7beae;
+   font-size: 12px;
+   text-align: right;
+}

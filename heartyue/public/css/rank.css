@@ -1,0 +1,69 @@
+main{
+    padding: 0 6px;
+}
+main>div{
+    margin-top: 6px;
+    background-color: white;
+    border: 1px solid #dad0df;
+}
+.main-tit{
+    background-color: #fefdf9;
+    color: #917b5f;
+    width: 100%;
+    height: 41px;
+    padding-left: 10px;
+    line-height: 41px;
+    border-bottom: 1px solid #f2f1ed;
+}
+main>div>a:nth-of-type(2){
+    border-top: 1px solid #eae3d3;
+    border-bottom: 1px solid #eae3d3;
+}
+.hot-book{
+    height: 92px;
+    padding: 10px 0;
+    margin: 0 10px;
+    display: flex;
+    position: relative;
+}
+.hot-book-img{
+    width: 54px;
+    height: 72px;
+    overflow: hidden;
+    margin-right: 10px;
+    /* background-color: #ca3b3b; */
+    flex-shrink: 0;
+}
+.hot-book-img img{
+    width: 100%;
+}
+.hot-book-info{
+    color: #777777;
+    font-size: 12px;
+    width: 80%;
+}
+.hot-book-info p{
+    margin-bottom: 6px;
+}
+.hot-book-tit{
+    color: #262626;
+    font-size: 18px;
+}
+.hot-book-info .hot-book-desc{
+    height: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;/* 设置文本不换行 */
+}
+.hot-into{
+    margin-top: 0;
+    height: 41px;
+    border-top: 1px solid #ece6dc;
+}
+.hot-into a{
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    color: #262626;
+}
